@@ -4,7 +4,7 @@ package com.ps.tcpinpractice.connector;
 // 3-way-handshake
 // syn, ack
 
-// polling vs 비동기I/O
+// poling vs 비동기I/O
 // syn,ack vs 입출력 async
 
 // import com.ps.tcpinpractice.domain.ConnectorManager;
