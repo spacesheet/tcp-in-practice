@@ -11,6 +11,6 @@ public class ConnectorExceptionHandlerImpl implements ConnectorExceptionHandler 
 	@Override
 	public ResponseEntity<Integer> handleConnectorHacked(Exception ex, WebRequest request){
 		System.out.println("logging system not yet");
-		return ResponseEntity.accepted().(get777(CustomUUID.createUUID())).body(ex.getMessage());
+		return ResponseEntity.accepted().().body(ex.getMessage());
 	}
 }

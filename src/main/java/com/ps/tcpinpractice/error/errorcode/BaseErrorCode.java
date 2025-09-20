@@ -1,16 +1,13 @@
 package com.ps.tcpinpractice.error.errorcode;
 
-import java.util.UUID;
+import java.util.AbstractMap;
+import java.util.Set;
 
-import com.ps.tcpinpractice.base.BaseTreeEntity;
+public class BaseErrorCode extends AbstractMap<ErrorKey, ErrorBody> {
 
-public class BaseErrorCode extends BaseTreeEntity<BaseErrorCode> {
-	private Integer errorCode;
-	private String message;
 
-	protected BaseErrorCode(UUID uuidErrorCode, BaseErrorCode parent, Integer sequence) {
-		super(uuidErrorCode, parent, sequence);
+	@Override
+	public Set<Entry<ErrorKey, ErrorBody>> entrySet() {
+		return Set.of();
 	}
-
-
 }
